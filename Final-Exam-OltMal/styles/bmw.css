@@ -1,0 +1,31 @@
+video{
+    width: 100vh;
+    height: auto;
+}
+.photo{
+  margin: 0;
+  padding: 0;
+  
+}
+.photo img {
+    width: 100%;
+    height: 800px;
+    animation: 2.5s anim-lineUp ease-out ;
+      }
+    @keyframes anim-lineUp {
+        0% {
+          opacity: 0;
+          transform: translateY(20%);
+        }
+        20% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+          transform: translateY(0%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0%);
+        }
+}

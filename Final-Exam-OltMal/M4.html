@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotorEmpire</title>
+     <link rel="shortcut Icon" type="image/icon" href="./Images/HeadLogo.PNG">
+     <link rel="stylesheet" href="./style.css">
+     <link rel="stylesheet" href="./styles/m4.css">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+<body class="">
+<header>
+    <a href="./index.html"><img src="./Images/Logo.png" alt="HeaderLogo"></a>
+    
+    <nav class="nav-links">
+        <ul>           
+<li><a href="#about-us">About Us</a></li>
+<li><a href="#showroom">showrooom</a></li>
+<li><a href="#contact-us">Contact us</a></li>
+<div class="icon-cart">
+<li><i class="fa-solid fa-cart-shopping icon-cart" style="color: whitesmoke;"></i></li>
+</div>
+
+<span class="cart-count">0</span>
+</ul>
+    </nav>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+   
+    
+
+</header>
+<div class="cart-tab">
+    <h1>Shopping Cart</h1>
+    <div class="listCart">
+        <div class="item">
+        <div class="img"><img src="" alt=""></div>
+        <div class="name"></div>
+        <div class="price"></div>
+        <div class="remove-item"><i class="fa-solid fa-trash" style="display: none;"></i></div>
+    </div>
+    </div>
+    <div class="total">
+        <h3>Billing:</h3>
+        <hr>
+      <p>Subtotal:
+    <span id="Subtotal-price">0.00</span>
+      </p>
+        <p>Total:
+            <span id="totali-price">0.00</span>
+        </p>
+        
+    </div>
+    <div class="cart-button">
+        <button class="close">Close</button>
+        <button class="check-out">Check Out</button>
+    </div>
+    </div>
+
+<section style="display: flex; " class="Images-section">
+    
+   
+    <img class="gray " src="./Images/M4/3c6628c0-3886-4d57-a868-1ede1e8bb18a.png" alt="" >
+   <img class="yellow" src="./Images/M4/bmw-m4-competition-coupe-m4-sao-paulo-yellow.avif" alt="" style="display: none;" >
+    <img class="blue" src="./Images/M4/f522c1ba8a648ea655ed530752fe5468.png" alt="" style="display: none;">
+    
+</section>
+
+<div class="Colors">
+    <button onclick="showImage('gray')" class="Gray"></button>
+    <button  onclick="showImage('yellow')" class="Yellow"></button>
+    <button onclick="showImage('blue')" class="Blue"></button>
+    </div>
+<div class="container-M4" data-id="1">
+  <div class="makina "><h1>BMW M4 Competiton V12</h1></div>
+<h4>Specs:M pack, 500+ Hp, Automatic</h4>
+<p><span>Powerful Engine:</span> The M4 Competition is equipped with a M TwinPower Turbo inline 12-cylinder engine that delivers an impressive 543 horsepower. This powerhouse engine provides maximum power delivery and the legendary M engine sound.<br><br>
+    <span>Acceleration: </span>The M4 Competition xDrive Coupe can go from 0 to 60 mph in just 3.4 seconds1.<br><br>
+    <span>Track-Ready Wheels:</span> The car features M Star Spoke wheels optimized for the track, providing optimal grip for faster acceleration.<br><br>
+    <span>Digital Features:</span> The M4 Competition comes with M Drive Professional, offering features like the M Drift Analyzer, M Traction Control, and M Laptimer for perfect drifts or legendary lap times.<br><br>
+    <span>Exterior Design:</span> The M4 Competition boasts standard laser rear lights, captivating Adaptive LED Headlights, and dramatic carbon fiber details on the hood, front splitter, mirror caps, roof, trunk spoiler, and rear diffuser.<br><br>
+   <span>Interior:</span>  Inside, you’ll find bold bi-color Merino Leather upholstery and lightweight M Carbon Bucket Seats that fuse sportiness with suppor</p>
+
+</div>
+<button class="btn-car add-to-cart " >Add to cart</button>
+
+
+
+
+
+
+
+
+<script>
+    function showImage(color) {
+        const images = document.querySelectorAll('.gray, .yellow, .blue');
+        images.forEach(img => {
+            img.style.display = 'none'; // Hide all images
+        });
+
+        if (color === 'yellow') {
+            document.querySelector('.yellow').style.display = 'block'; // Show yellow image
+        }
+        if (color === 'gray') {
+            document.querySelector('.gray').style.display = 'block'; // Show yellow image
+        }
+        if (color === 'blue') {
+            document.querySelector('.blue').style.display = 'block'; // Show yellow image
+        }
+    }
+</script>
+
+<script src="./script.js"></script>
+    
+    </body>
+    </html>

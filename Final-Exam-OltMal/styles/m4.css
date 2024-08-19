@@ -1,0 +1,157 @@
+
+   section img, .gray, .yellow, .blue {
+      height: 540px; 
+      width: 960%; 
+      object-fit: contain;
+     position: relative;
+      left: 0;
+       animation: moveright 3s ; 
+       margin-left: 50%;
+    
+      }
+      
+  
+    
+  section .gray {
+    background-color: #303030 ;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 100vh;
+    
+  }
+  section .yellow {
+    background-color: #93b400 ;
+    border-radius: 20px;
+    margin-top: 20px;
+    align-items: left;
+    width: 100vh;
+    
+  }
+  section .blue {
+    background-color: rgb(57, 57, 255) ;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 100vh;
+    
+  }
+  
+  
+   @keyframes moveright {
+      0% {
+          left: 0;
+      }
+      50% {
+          left: 100%;
+      }
+      100% {
+          left: 0;
+      }
+    }
+  
+  
+  
+  
+    section img .gray .yellow{
+      width: 960px;
+      height: 540px;
+      position: relative;
+      left: 0;
+      animation: moveright 3s ;
+  }
+  
+  @keyframes moveright {
+      0% {
+          left: 0;
+      }
+      50% {
+          left: 100%;
+      }
+      100% {
+          left: 0;
+      }
+    }
+  
+  
+    button .colors, .Gray, .Yellow, .Blue{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: none;
+      margin-top: 30px;
+     
+    
+    }
+    button .colors, .Gray {
+      background-color: #525252;
+      cursor: pointer;
+      transition: 200ms;
+      margin-left: 80%;
+     
+    }
+    button .colors, .Yellow{
+      background-color: #Cfff04 ;
+      cursor: pointer;
+      transition: 200ms;
+    }
+    button .colors, .Blue{
+      background-color: blue;
+      cursor: pointer;
+      transition: 200ms;
+  
+    }
+  
+    button:hover{
+      transform: scale(1.1);
+      transition: 200ms;
+    }
+
+   .buy{
+        border: none;
+        background-color: #303030;
+        width: 50%;
+        font-size: 4em;
+        border-radius: 5px;
+        margin-left: 30px;
+        color: white;
+
+    }
+    .colors h1 p {
+       display: flex;
+       justify-content: space-between;
+        justify-content: baseline;
+    }
+
+.container-M4{
+  width: 50%;
+  height: 450px;
+  background-color: #303030;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.container-M4 span{
+  font-weight: 700;
+  color: #000000;
+  font-size: 20px;
+}
+
+.container-M4 span p {
+  font-size: 200px;
+}
+
+ .btn-car{
+  width: 25rem;
+  height: 50pxpx;
+  border: none;
+  background-color: #525252;
+  margin-top: 80px;
+  font-size: 20px;
+  color: white;
+  font-weight: 700;
+  position: absolute;
+  left: 54%;
+bottom: 300px;
+  border-radius: 5px;
+ 
+
+}
